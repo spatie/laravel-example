@@ -1,7 +1,8 @@
 <?php
 
+use Spatie\Example\Commands\ExampleCommand;
 use function Pest\Laravel\artisan;
 
 it('can test', function () {
-    artisan(\Spatie\Example\Commands\ExampleCommand::class)->assertExitCode(0);
+    artisan(ExampleCommand::class)->assertExitCode(0);
 });
