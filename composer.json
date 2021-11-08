@@ -29,9 +29,8 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.4",
-        "spatie/laravel-ray": "^1.23",
-        "symfony/routing": "^5.3"
+        "phpunit/phpunit": "^9.2",
+        "spatie/laravel-ray": "^1.23"
     },
     "autoload": {
         "psr-4": {
