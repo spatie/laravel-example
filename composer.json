@@ -23,7 +23,7 @@
     "require-dev": {
         "nunomaduro/collision": "^5.3",
         "nunomaduro/larastan": "^1.0",
-        "orchestra/testbench": "^5.0|^6.15",
+        "orchestra/testbench": "^5.20|^6.15",
         "pestphp/pest": "^1.20",
         "pestphp/pest-plugin-laravel": "^1.1",
         "phpstan/extension-installer": "^1.1",
