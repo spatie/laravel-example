@@ -12,6 +12,7 @@ class ExampleCommand extends Command
 
     public function handle(): int
     {
+        dd('calling the command');
         $this->comment('All done');
 
         return self::SUCCESS;
