@@ -14,6 +14,6 @@ class ExampleCommand extends Command
     {
         $this->comment('All done');
 
-        return 0;
+        return self::SUCCESS;
     }
 }
