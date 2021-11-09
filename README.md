@@ -40,6 +40,12 @@ php artisan vendor:publish --tag="example-migrations"
 php artisan migrate
 ```
 
+Optionally, you can publish the views using
+
+```bash
+php artisan vendor:publish --tag="example-views"
+```
+
 You can publish the config file with:
 ```bash
 php artisan vendor:publish --tag="example-config"
