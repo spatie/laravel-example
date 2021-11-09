@@ -36,13 +36,13 @@ composer require spatie/laravel-example
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --provider="Spatie\Example\ExampleServiceProvider" --tag="laravel-example-migrations"
+php artisan vendor:publish --provider="Spatie\Example\ExampleServiceProvider" --tag="example-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Spatie\Example\ExampleServiceProvider" --tag="laravel-example-config"
+php artisan vendor:publish --provider="Spatie\Example\ExampleServiceProvider" --tag="example-config"
 ```
 
 This is the contents of the published config file:
@@ -54,10 +54,6 @@ return [
 
 ## Usage
 
-```php
-$laravel-example = new Spatie\Example();
-echo $laravel-example->echoPhrase('Hello, Spatie!');
-```
 
 ## Testing
 
