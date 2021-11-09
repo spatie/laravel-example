@@ -12,11 +12,9 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        /*
         Factory::guessFactoryNamesUsing(
             fn (string $modelName) => 'Spatie\\Example\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
-        */
     }
 
     protected function getPackageProviders($app)
@@ -30,9 +28,7 @@ class TestCase extends Orchestra
     {
         config()->set('database.default', 'testing');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel-example_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_my_models_table.php.stub';
         $migration->up();
-        */
     }
 }

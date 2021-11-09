@@ -8,10 +8,10 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('laravel-example_table', function (Blueprint $table) {
+        Schema::create('my_models', function (Blueprint $table) {
             $table->id();
 
-            // add fields
+            $table->string('name');
 
             $table->timestamps();
         });
