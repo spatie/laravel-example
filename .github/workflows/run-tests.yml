@@ -24,6 +24,17 @@ jobs:
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_DATABASE: laravel_example
+          MYSQL_USER: user
+          MYSQL_PASSWORD: secret
+          MYSQL_ROOT_PASSWORD: secretroot
+        ports:
+          - 3306
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -47,3 +58,7 @@ jobs:
 
       - name: Execute tests
         run: vendor/bin/pest
+        env:
+          MYSQL_USER: user
+          MYSQL_PASSWORD: secret
+          DB_PORT: ${{ job.services.mysql.ports[3306] }}

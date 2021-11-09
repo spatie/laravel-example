@@ -12,6 +12,7 @@ return new class extends Migration
             $table->id();
 
             $table->string('name');
+            $table->json('options')->nullable();
 
             $table->timestamps();
         });
