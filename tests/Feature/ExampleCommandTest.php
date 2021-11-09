@@ -7,8 +7,6 @@ it('can output the configured value', function () {
     artisan(ExampleCommand::class)
         ->expectsOutput(config('example.command_output'))
         ->assertExitCode(0);
-
-
 });
 
 it('can output the another value', function () {
