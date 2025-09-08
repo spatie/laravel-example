@@ -1,6 +1,7 @@
 <?php
 
 use function Pest\Laravel\artisan;
+
 use Spatie\Example\Commands\ExampleCommand;
 
 it('can output the configured value', function () {
